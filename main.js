@@ -6,10 +6,10 @@ function changeBackground(e) {
     console.log(`${x}, ${y}`);
 
     if (x % 2 == 0 && y % 2 == 0) {
-        document.body.style.backgroundColor = "green";
+        return document.body.style.backgroundColor = "green";
     } else if (x % 2 !== 0 && y % 2 !== 0) {
-        document.body.style.backgroundColor = "red";
+        return document.body.style.backgroundColor = "red";
     } else {
-        document.body.style.backgroundColor = "blue";
+        return document.body.style.backgroundColor = "blue";
     }
 }
