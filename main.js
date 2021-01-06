@@ -13,3 +13,14 @@ function changeBackground(e) {
         return document.body.style.backgroundColor = "blue";
     }
 }
+
+let red = 150;
+let green = 150;
+let blue = 150;
+document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
+
+const changeColor = (event) => {
+
+}
+
+window.addEventListener("keyDown", changeColor);
