@@ -17,10 +17,21 @@ function changeBackground(e) {
 let red = 150;
 let green = 150;
 let blue = 150;
+let pressedKeyCode;
 document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
 
 const changeColor = (event) => {
+    pressKeyCode = event.keyCode;
+    console.log(event.keyCode);
 
+    switch (pressedKeyCode) {
+        case 38:
+
+            break;
+        case 40:
+
+            break;
+    }
 }
 
-window.addEventListener("keyDown", changeColor);
+window.addEventListener("keydown", changeColor);
