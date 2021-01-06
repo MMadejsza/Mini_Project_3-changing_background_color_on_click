@@ -17,19 +17,18 @@ function changeBackground(e) {
 let red = 150;
 let green = 150;
 let blue = 150;
-let pressedKeyCode;
-document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
 
 const changeColor = (event) => {
-    pressKeyCode = event.keyCode;
-    console.log(event.keyCode);
+    document.body.style.backgroundColor = `rgb(${red},${green},${blue})`
 
-    switch (pressedKeyCode) {
+    switch (event.keyCode) {
         case 38:
-
+            document.body.style.backgroundColor = `rgb(${red < 255 ? red++ : red},${green < 255 ? green++ : green},${blue < 255 ? blue++ : blue})`
+            console.log(red);
             break;
         case 40:
-
+            document.body.style.backgroundColor = `rgb(${red > 0 ? red-- : red},${green > 0 ? green-- : green},${blue > 0 ? blue-- : blue})`
+            console.log(red);
             break;
     }
 }
